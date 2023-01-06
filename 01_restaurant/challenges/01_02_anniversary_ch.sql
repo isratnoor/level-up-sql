@@ -5,3 +5,9 @@
 -- they plan to bring in their party.
 
 -- Hint: SQLite offers the INTEGER and REAL datatypes
+
+CREATE TABLE InvetationResponse (
+  CustomerID INTEGER,
+  Number_People INTEGER,
+  FOREIGN KEY (CustomerID) REFERENCES Customers (CustomerID)
+)
